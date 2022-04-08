@@ -1,0 +1,66 @@
+@use 'breakpoints' as *;
+
+/*----------------- FONT FACE -----------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/*----------------- CSS VARIABLES -----------------*/
+:root {
+  --header-height: 3.5rem;
+
+  // Colors
+  --first-hue: 250;
+  --sat: 66%;
+  --lig: 75%;
+  --second-hue: 219;
+  --first-color: hsl(250, 66%, 75%);
+  --first-color-alt: hsl(250, 66%, 71%);
+  --title-color: hsl(219, 15%, 95%);
+  --text-color: hsl(219, 8%, 75%);
+  --text-color-light: hsl(219, 4%, 55%);
+  --body-color: hsl(219, 48%, 8%);
+  --container-color: hsl(var(--second-hue), 32%, 12%);
+
+  // Font & typgraphy
+  --body-font: 'Poppins', sans-serif;
+
+  --biggest-font-size: 1.75rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
+  --tinry-font-size: 0.625rem;
+
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+
+  @include breakpoint(large-1) {
+    --big-font-size: 2.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+  }
+
+  // Margins
+  --mb-2-5: 2.5rem;
+  --mb-2: 2rem;
+  --mb-1-5: 1.5rem;
+  --mb-1: 1rem;
+  --mb-0-75: 0.75rem;
+  --mb-0-5: 0.5rem;
+  --mb-0-25: 0.25rem;
+
+  // Transition
+  --layout-animation: 0.4s ease-in;
+  --component-animation: 0.3s ease-in;
+
+  // Z-index
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 100;
+}
