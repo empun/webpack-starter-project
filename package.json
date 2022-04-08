@@ -8,17 +8,9 @@
     "dev": "npm run build && webpack serve"
   },
   "private": true,
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/empun/webpack-starter-project.git"
-  },
   "keywords": [],
   "author": "empun",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/empun/webpack-starter-project/issues"
-  },
-  "homepage": "https://github.com/empun/webpack-starter-project#readme",
   "devDependencies": {
     "@babel/core": "^7.17.9",
     "@babel/preset-env": "^7.16.11",

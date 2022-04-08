@@ -6,7 +6,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 
 const htmlProperty = {
-  title: 'Responsive Website',
+  title: ' | ',
   filename: 'index.html',
   template: 'src/index.html',
 };
