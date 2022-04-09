@@ -1,3 +1,3 @@
-require('../scss/styles.scss');
+require('../scss/main.scss');
 
 console.log('🚀 --- webpack starter project initialized --- 🚀');
