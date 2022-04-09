@@ -1,5 +1,6 @@
 node_modules
 dist
+.vscode
 *.css.map
 *.sass.map
 *.scss.map
