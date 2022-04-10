@@ -9,7 +9,9 @@ module.exports = {
   plugins: ['prettier'],
   parserOptions: {
     ecmaVersion: 'latest',
+    sourceType: 'module',
   },
+  ignorePatterns: ['dist', 'node_modules'],
   rules: {
     'prettier/prettier': [
       'error',
@@ -21,6 +23,13 @@ module.exports = {
       },
     ],
     'no-console': 'off',
-    'import/no-extraneous-dependencies': 'off',
+    'import/no-extraneous-dependencies': ['off', { devDependencies: false }],
+  },
+  settings: {
+    'import/resolver': {
+      webpack: {
+        config: 'webpack.common.js',
+      },
+    },
   },
 };
