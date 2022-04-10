@@ -14,7 +14,7 @@ module.exports = merge(common, {
   devtool: 'source-map',
   devServer: {
     watchFiles: ['src/**/*'],
-    port: 3000,
+    port: 3002,
     open: false,
     compress: false,
     historyApiFallback: true,
@@ -22,6 +22,7 @@ module.exports = merge(common, {
   plugins: [
     new HtmlWebpackPlugin({
       title,
+      favicon: 'src/img/favicon.png',
       filename: 'index.html',
       template: 'src/template.html',
     }),
