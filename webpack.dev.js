@@ -14,7 +14,7 @@ module.exports = merge(common, {
   devtool: 'source-map',
   devServer: {
     watchFiles: ['src/**/*'],
-    port: 3002,
+    port: 3000,
     open: false,
     compress: false,
     historyApiFallback: true,
