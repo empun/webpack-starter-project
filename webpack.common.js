@@ -19,8 +19,23 @@ module.exports = {
         },
       },
       {
-        test: /\.(jpe?g|png|gif|svg|ico)$/i,
+        test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[hash][ext][query]',
+        },
+      },
+      {
+        test: /\.(woff(2)?|eot|ttf|otf|svg|)$/,
         type: 'asset',
+        parser: {
+          dataUrlCondition: {
+            maxSize: 8 * 1024,
+          },
+        },
+        generator: {
+          filename: 'fonts/[hash][ext][query]',
+        },
       },
     ],
   },
