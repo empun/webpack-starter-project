@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 const { merge } = require('webpack-merge');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
 const common = require('./webpack.common');
 const title = require('./web.config');
 
@@ -15,11 +16,16 @@ module.exports = merge(common, {
   },
   plugins: [
     new MiniCssExtractPlugin({ filename: 'css/[name].bundle.css' }),
+    new FaviconsWebpackPlugin({
+      logo: './src/img/favicon.png',
+      prefix: 'img/',
+      inject: true,
+    }),
     new HtmlWebpackPlugin({
       title,
-      favicon: 'src/img/favicon.png',
       filename: 'index.html',
       template: 'src/template.html',
+      inject: 'body',
       minify: {
         removeAttributeQuotes: true,
         collapseWhitespace: true,
