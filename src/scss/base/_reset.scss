@@ -2,9 +2,9 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: inherit;
 }
 
 html {
@@ -24,6 +24,7 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: var(--layout-animation);
+  box-sizing: border-box;
 }
 
 h1,
