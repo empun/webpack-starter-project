@@ -22,7 +22,7 @@ module.exports = merge(common, {
   plugins: [
     new HtmlWebpackPlugin({
       title,
-      favicon: 'src/img/favicon.png',
+      favicon: './src/img/favicon.ico',
       filename: 'index.html',
       template: 'src/template.html',
     }),

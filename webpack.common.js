@@ -22,7 +22,7 @@ module.exports = {
         test: /\.(?:ico|gif|png|jpg|jpeg)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[hash][ext][query]',
+          filename: 'img/[hash][ext][query]',
         },
       },
       {

@@ -3,17 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 :root {
-  --max-width: 968px;
+  --container-max-width: 968px;
+  --container-padding: 3rem;
 
-  --header-height: 3.5rem;
+  @include breakpoint(small) {
+    --container-padding: 2rem;
+  }
 
-  --first-color: hsl(36, 72%, 48%);
-  --first-color-alt: hsl(36, 72%, 44%);
-  --title-color: hsl(206, 12%, 12%);
-  --text-color: hsl(206, 4%, 42%);
-  --text-color-light: hsl(206, 4%, 75%);
-  --body-color: hsl(206, 4%, 97%);
-  --container-color: #fff;
+  --primary-color-1: hsl(263, 55%, 52%);
+  --primary-color-2: hsl(217, 19%, 35%);
+  --primary-color-3: hsl(219, 29%, 14%);
+  --primary-color-4: hsl(0, 0%, 100%);
+  --neutral-color-1: hsl(0, 0%, 81%);
+  --neutral-color-2: hsl(210, 46%, 95%);
 
   --body-font: 'Poppins', sans-serif;
 
