@@ -1,4 +1,3 @@
-/*----------------- BREAKPOINT FOR DIFFERENT SCREEN SIZE -----------------*/
 @mixin breakpoint($media) {
   @if $media == small {
     @media only screen and (max-width: 320px) {

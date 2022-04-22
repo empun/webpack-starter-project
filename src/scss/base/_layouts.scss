@@ -1,0 +1,12 @@
+.main {
+  overflow: hidden;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  width: min(100% - 3rem, 968px);
+  margin-inline: auto;
+}

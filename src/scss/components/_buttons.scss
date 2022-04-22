@@ -1,9 +1,6 @@
-/*----------------- BUTTON -----------------*/
-.button {
+.btn {
   display: inline-block;
-  border-radius: 0.5rem;
-  background-color: var(--first-color);
+  color: var(--first-color);
   padding: 1.25rem 1.75rem;
-  color: #fff;
   transition: var(--component-animation);
 }

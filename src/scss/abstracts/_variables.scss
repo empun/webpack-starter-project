@@ -1,26 +1,18 @@
 @use 'breakpoints' as *;
 
-/*----------------- FONT FACE -----------------*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/*----------------- CSS VARIABLES -----------------*/
 :root {
   --header-height: 3.5rem;
 
-  // Colors
-  --first-hue: 250;
-  --sat: 66%;
-  --lig: 75%;
-  --second-hue: 219;
-  --first-color: hsl(250, 66%, 75%);
-  --first-color-alt: hsl(250, 66%, 71%);
-  --title-color: hsl(219, 15%, 95%);
-  --text-color: hsl(219, 8%, 75%);
-  --text-color-light: hsl(219, 4%, 55%);
-  --body-color: hsl(219, 48%, 8%);
-  --container-color: hsl(var(--second-hue), 32%, 12%);
+  --first-color: hsl(36, 72%, 48%);
+  --first-color-alt: hsl(36, 72%, 44%);
+  --title-color: hsl(206, 12%, 12%);
+  --text-color: hsl(206, 4%, 42%);
+  --text-color-light: hsl(206, 4%, 75%);
+  --body-color: hsl(206, 4%, 97%);
+  --container-color: #fff;
 
-  // Font & typgraphy
   --body-font: 'Poppins', sans-serif;
 
   --biggest-font-size: 1.75rem;
@@ -46,7 +38,6 @@
     --smaller-font-size: 0.813rem;
   }
 
-  // Margins
   --mb-2-5: 2.5rem;
   --mb-2: 2rem;
   --mb-1-5: 1.5rem;
@@ -55,11 +46,9 @@
   --mb-0-5: 0.5rem;
   --mb-0-25: 0.25rem;
 
-  // Transition
-  --layout-animation: 0.4s ease-in;
-  --component-animation: 0.3s ease-in;
+  --layout-animation: 0.4s ease-in-out;
+  --component-animation: 0.3s ease-in-out;
 
-  // Z-index
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 100;
